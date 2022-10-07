@@ -3,15 +3,16 @@ kind: ClusterConfig
 
 metadata:
   name: basic-cluster
-  region: eu-north-1
+  region: ap-southeast-1 
 
 nodeGroups:
   - name: ng-1
     instanceType: m5.large
-    desiredCapacity: 10
+    desiredCapacity: 2 
     volumeSize: 80
     ssh:
       allow: true # will use ~/.ssh/id_rsa.pub as the default ssh key
+      publicKeyPath: ~/.ssh/fgt_sg.pub
   - name: ng-2
     instanceType: m5.xlarge
     desiredCapacity: 2
