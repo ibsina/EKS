@@ -3,7 +3,7 @@ kind: ClusterConfig
 
 metadata:
   name: private-cluster
-  region: ap-southeast-1 
+  region: ap-southeast-1
 
 privateCluster:
   enabled: true
@@ -17,7 +17,6 @@ vpc:
         id: subnet-077903fe6af074f97 
       ap-southeast-1b:
         id: subnet-0b75adbd28edfda59 
-
 
 nodeGroups:
 - name: ng1
