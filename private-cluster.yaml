@@ -22,5 +22,6 @@ vpc:
 managedNodeGroups:
 - name: m1
   instanceType: m5.large
+  labels: { role: web }
   desiredCapacity: 2
   privateNetworking: true
