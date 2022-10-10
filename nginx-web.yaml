@@ -6,7 +6,7 @@ metadata:
     app: nginx
 spec:
   nodeSelector:
-    role: web2
+    role: "web2"
   replicas: 1
   selector:
     matchLabels:
