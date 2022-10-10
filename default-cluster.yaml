@@ -6,10 +6,6 @@ metadata:
   region: ap-southeast-1
 
 managedNodeGroups:
-- name: m1
-  instanceType: m5.large
-  labels: { role: web1 }
-  desiredCapacity: 1
 - name: m2
   instanceType: m5.large
   labels: { role: web2 }
