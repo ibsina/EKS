@@ -4,6 +4,7 @@ kind: Service
 metadata:
   name: nginx-service
   annotations:
+    service.beta.kubernetes.io/aws-load-balancer-nlb-target-type: instance
     service.beta.kubernetes.io/aws-load-balancer-internal: "true" 
 spec:
   type: LoadBalancer
